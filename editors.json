@@ -1,0 +1,224 @@
+{
+	"$comment": [
+		"The FIRST entry is the baseline: every other editor's delta and p-value is measured against it.",
+		"Every editor is tried in order: 'paths' first (exact install locations), then 'commands' on PATH.",
+		"macOS entries name the .app bundle itself — the executable inside is read from Contents/Info.plist,",
+		"because forks disagree about whether it is called Electron or the product name.",
+		"Add your own entry, or extra paths, for anything installed somewhere unusual: node bench.mjs --list re-checks."
+	],
+	"editors": [
+		{
+			"name": "vscode",
+			"commands": [
+				"code"
+			],
+			"paths": [
+				"/usr/share/code/code",
+				"/opt/visual-studio-code/code",
+				"/usr/lib/code/code",
+				"~/.local/share/code/code",
+				"/Applications/Visual Studio Code.app",
+				"~/Applications/Visual Studio Code.app",
+				"%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\Code.exe",
+				"%ProgramFiles%\\Microsoft VS Code\\Code.exe"
+			]
+		},
+		{
+			"name": "vscodium",
+			"commands": [
+				"codium",
+				"vscodium"
+			],
+			"paths": [
+				"/usr/share/codium/codium",
+				"/opt/vscodium-bin/codium",
+				"/opt/vscodium/codium",
+				"~/.local/share/codium/codium",
+				"/Applications/VSCodium.app",
+				"~/Applications/VSCodium.app",
+				"%LOCALAPPDATA%\\Programs\\VSCodium\\VSCodium.exe",
+				"%ProgramFiles%\\VSCodium\\VSCodium.exe"
+			]
+		},
+		{
+			"name": "cursor",
+			"commands": [
+				"cursor"
+			],
+			"paths": [
+				"~/.local/share/cursor/cursor",
+				"/opt/cursor/cursor",
+				"/usr/share/cursor/cursor",
+				"/Applications/Cursor.app",
+				"~/Applications/Cursor.app",
+				"%LOCALAPPDATA%\\Programs\\cursor\\Cursor.exe",
+				"%ProgramFiles%\\cursor\\Cursor.exe"
+			]
+		},
+		{
+			"name": "hyperlane",
+			"commands": [
+				"hyperlane"
+			],
+			"paths": [
+				"~/hyperlane/hyperlane",
+				"/opt/hyperlane/hyperlane",
+				"/usr/share/hyperlane/hyperlane",
+				"~/.local/share/hyperlane/hyperlane",
+				"/Applications/Hyperlane.app",
+				"~/Applications/Hyperlane.app",
+				"%LOCALAPPDATA%\\Programs\\Hyperlane\\Hyperlane.exe",
+				"%ProgramFiles%\\Hyperlane\\Hyperlane.exe"
+			]
+		},
+		{
+			"$comment": "Devin Desktop is Windsurf after the Cognition rebrand. The legacy 'windsurf' entry below is kept for machines still on a pre-rebrand build, or one that rebranded in place without moving its install directory.",
+			"name": "devin",
+			"commands": [
+				"devin",
+				"devin-desktop"
+			],
+			"paths": [
+				"~/.local/share/devin/devin",
+				"/opt/devin/devin",
+				"/usr/share/devin/devin",
+				"~/.local/share/devin-desktop/devin-desktop",
+				"/opt/devin-desktop/devin-desktop",
+				"/usr/share/devin-desktop/devin-desktop",
+				"/Applications/Devin.app",
+				"~/Applications/Devin.app",
+				"/Applications/Devin Desktop.app",
+				"~/Applications/Devin Desktop.app",
+				"%LOCALAPPDATA%\\Programs\\Devin\\Devin.exe",
+				"%ProgramFiles%\\Devin\\Devin.exe",
+				"%LOCALAPPDATA%\\Programs\\Devin Desktop\\Devin Desktop.exe",
+				"%ProgramFiles%\\Devin Desktop\\Devin Desktop.exe"
+			]
+		},
+		{
+			"name": "windsurf",
+			"commands": [
+				"windsurf"
+			],
+			"paths": [
+				"~/.local/share/windsurf/windsurf",
+				"/opt/windsurf/windsurf",
+				"/usr/share/windsurf/windsurf",
+				"/Applications/Windsurf.app",
+				"~/Applications/Windsurf.app",
+				"%LOCALAPPDATA%\\Programs\\Windsurf\\Windsurf.exe",
+				"%ProgramFiles%\\Windsurf\\Windsurf.exe"
+			]
+		},
+		{
+			"name": "positron",
+			"commands": [
+				"positron"
+			],
+			"paths": [
+				"/usr/share/positron/positron",
+				"/opt/positron/positron",
+				"~/.local/share/positron/positron",
+				"/Applications/Positron.app",
+				"~/Applications/Positron.app",
+				"%LOCALAPPDATA%\\Programs\\Positron\\Positron.exe",
+				"%ProgramFiles%\\Positron\\Positron.exe"
+			]
+		},
+		{
+			"name": "void",
+			"commands": [
+				"void"
+			],
+			"paths": [
+				"/usr/share/void/void",
+				"/opt/void/void",
+				"~/.local/share/void/void",
+				"/Applications/Void.app",
+				"~/Applications/Void.app",
+				"%LOCALAPPDATA%\\Programs\\Void\\Void.exe",
+				"%ProgramFiles%\\Void\\Void.exe"
+			]
+		},
+		{
+			"name": "kiro",
+			"commands": [
+				"kiro"
+			],
+			"paths": [
+				"/usr/share/kiro/kiro",
+				"/opt/kiro/kiro",
+				"~/.local/share/kiro/kiro",
+				"/Applications/Kiro.app",
+				"~/Applications/Kiro.app",
+				"%LOCALAPPDATA%\\Programs\\Kiro\\Kiro.exe",
+				"%ProgramFiles%\\Kiro\\Kiro.exe"
+			]
+		},
+		{
+			"name": "trae",
+			"commands": [
+				"trae"
+			],
+			"paths": [
+				"/usr/share/trae/trae",
+				"/opt/trae/trae",
+				"~/.local/share/trae/trae",
+				"/Applications/Trae.app",
+				"~/Applications/Trae.app",
+				"%LOCALAPPDATA%\\Programs\\Trae\\Trae.exe",
+				"%ProgramFiles%\\Trae\\Trae.exe"
+			]
+		},
+		{
+			"$comment": "The product is Antigravity IDE; 'antigravity' is only the short key used by --only and the result tables, the way 'vscode' stands in for Visual Studio Code.",
+			"name": "antigravity",
+			"commands": [
+				"antigravity",
+				"antigravity-ide"
+			],
+			"paths": [
+				"/usr/share/antigravity/antigravity",
+				"/opt/antigravity/antigravity",
+				"~/.local/share/antigravity/antigravity",
+				"/usr/share/antigravity-ide/antigravity-ide",
+				"/opt/antigravity-ide/antigravity-ide",
+				"~/.local/share/antigravity-ide/antigravity-ide",
+				"/Applications/Antigravity IDE.app",
+				"~/Applications/Antigravity IDE.app",
+				"/Applications/Antigravity.app",
+				"~/Applications/Antigravity.app",
+				"%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe",
+				"%ProgramFiles%\\Antigravity IDE\\Antigravity IDE.exe",
+				"%LOCALAPPDATA%\\Programs\\Antigravity\\Antigravity.exe",
+				"%ProgramFiles%\\Antigravity\\Antigravity.exe"
+			]
+		},
+		{
+			"$comment": [
+				"Zed is not a VS Code fork, so it is measured through the 'zed' family in bench.mjs: its own --user-data-dir (which moves its database, extensions, logs and config in one flag), and its own ready mark — the first frame it reports rendering — instead of --prof-append-timers.",
+				"The paths point at the app binary in libexec, not at bin/zed: that is a launcher which hands the paths to the app over a socket and exits, so the pid the harness held would not be the editor. A bin/zed found on PATH is walked back to it automatically."
+			],
+			"name": "zed",
+			"family": "zed",
+			"commands": [
+				"zed",
+				"zeditor",
+				"zed-editor"
+			],
+			"paths": [
+				"~/.local/zed.app/libexec/zed-editor",
+				"~/.local/zed-preview.app/libexec/zed-editor",
+				"/opt/zed.app/libexec/zed-editor",
+				"/usr/lib/zed/libexec/zed-editor",
+				"/usr/libexec/zed-editor",
+				"/usr/lib/zed-editor/zed-editor",
+				"/Applications/Zed.app",
+				"~/Applications/Zed.app",
+				"%LOCALAPPDATA%\\Programs\\Zed\\Zed.exe",
+				"%LOCALAPPDATA%\\Zed\\Zed.exe",
+				"%ProgramFiles%\\Zed\\Zed.exe"
+			]
+		}
+	]
+}
